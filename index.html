@@ -7,8 +7,8 @@
     <title>Ладижинська територіальна громада</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -39,10 +39,10 @@
                 <img src="src/img/close-cross.svg" alt="cross menu" id="crossmenu" class="crossmenu hidden-d">
             </div>
             <h3 class="navigation-mobile-title">Інвестиційний каталог</h3>
-            <ul class="hidden-d">
-                <li><a href="#">Економічний <br>розвиток</a></li>
-                <li><a href="#">Підприємства <br>міста</a></li>
-                <li><a href="#">Інвестиційні <br>песпективи</a></li>
+            <ul id="mobileMenuList" class="hidden-d">
+                <li><a href="#">Економічний розвиток</a></li>
+                <li><a href="#">Підприємства міста</a></li>
+                <li><a href="#">Інвестиційні песпективи</a></li>
             </ul>
         </nav>
         <header class="header">
@@ -60,22 +60,24 @@
             <div id="rightblockContent" class="rightblock-content hidden">
                 <div class="rightblock-content-content">
                     <div class="rightblock-content-emblem">
-                        <img src="src/img/gerb.png" alt="city_emblem">                        
-                    </div> 
-                    <h1 class="rightblock-content-title">ЛАДИЖИНСЬКА МІСЬКА ТЕРИТОРІАЛЬНА ГРОМАДА</h1>                   
+                        <img src="src/img/gerb.png" alt="city_emblem">
+                    </div>
+                    <h1 class="rightblock-content-title">ЛАДИЖИНСЬКА МІСЬКА ТЕРИТОРІАЛЬНА ГРОМАДА</h1>
                     <div id="rightblockContentQr" class="rightblock-content-qr hidden">
                         <div class="rightblock-content-qr--qr">
-                            <a href="#"><img src="src/img/qr-code.png" alt="QR_code"></a>                    
+                            <a href="#"><img src="src/img/qr-code.png" alt="QR_code"></a>
                         </div>
                         <div class="rightblock-qr-title"><a href="#">ladrada.gov.ua</a></div>
                     </div>
                 </div>
-                
+
             </div>
-            <div class="content-mobile">                
+            <div class="content-mobile">
             </div>
-            <div class="content-mobile-emblem">
-                <img src="src/img/gerb.png" alt="city_emblem">                        
+            <div class="content-mobile-wrapper">
+                <div class="content-mobile-emblem">
+                    <img src="src/img/gerb.png" alt="city_emblem">
+                </div>
             </div>
         </header>
 
@@ -169,6 +171,7 @@
         })();
     </script>
     <script src="js/header_animation.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>
