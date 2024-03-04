@@ -557,14 +557,13 @@ h6 {
     margin: 0 auto;
     height: 0;
     color: rgba(0, 0, 0, 0);
-    background-color: rgb(214 216 251);
+    background-color: rgb(236 237 255);
     line-height: 18px;
     padding: 0 30px;
     box-sizing: border-box;
     transition: color 0.5s, padding 0.5s;
     overflow: hidden;
-    font-family: Verdana, sans-serif;
-    font-size: 16px;
+    font-size: 1.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 10px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -584,8 +583,7 @@ h6 {
     font-weight: 300;
     box-sizing: border-box;
     z-index: 100;
-    font-family: Verdana, sans-serif;
-    font-size: 18px;
+    font-size: 1.5rem;
     margin: 0 0 5px;
     transition: color .35s;
     border-radius: 10px;
@@ -630,7 +628,7 @@ h6 {
 
 .enterprise-item--title,
 .invest-item--title {
-    font-size: 2em;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 3%;
     line-height: 1.5em;
@@ -668,15 +666,16 @@ h6 {
     width: 100%;
     margin-top: 3%;
     display: flex;
-    float: left;
+    flex-direction: column-reverse;
 }
 
 .contacts {
-    width: 50%;
+    width: 100%;
     display: flex;
-    /* align-items: flex-start; */
+    align-items: center;
     flex-direction: column;
     justify-content: flex-end;
+    margin-top: 20px;
 }
 
 .contacts a {
@@ -684,12 +683,14 @@ h6 {
 }
 
 .map {
-    width: 50%;
-    margin: 0 auto;
+    width: 100%;
     display: flex;
-    /* align-content: center; */
     justify-content: center;
+}
 
+.map iframe {
+    width: 100%;
+    height: 350px;
 }
 
 /*-acordeon-*/
@@ -698,13 +699,17 @@ h6 {
 
 .enterprise-title {
     color: white;
-    font-size: 1.75vw;
+    font-size: 1.3rem;
     text-transform: uppercase;
     background-color: rgb(0 6 92 );
     padding: 20px 20px;
     display: flex;
     justify-content: space-between;
     border-radius: 0 0 10px 10px;
+}
+
+.enterprise-title h1 {
+    font-size: 1.7rem;
 }
 
 .enterprise-container {
@@ -762,6 +767,25 @@ h6 {
     .navigation-mobile ul li a {
         display: block;
     }
+
+    .enterprise-title {
+        font-size: 1rem;
+    }
+
+    .enterprise-title h1 {
+        font-size: 1.3rem;
+    }
+
+    .enterprise-item--body img, 
+    .invest-item--body img {
+        width: 100%;
+    }
+
+    .enterprise-item--description, 
+    .invest-item--description {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -844,5 +868,27 @@ h6 {
 
     .content-mobile-emblem {
         display: flex;
+    }
+
+    .enterprise-item label, .invest-item label {
+        font-size: 1.3rem;
+    }
+
+    .enterprise-item--title, .invest-item--title {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    .enterprise-item input:checked+label+.acor-body, .invest-item input:checked+label+.acor-body {
+        padding: 10px 15px 20px;
+    }
+
+    .enterprise-item--description, .invest-item--description {
+        font-size: 1.3rem;
+        text-align: justify;
+    }
+
+    .contacts {
+        font-size: 1.2rem;
     }
 }
